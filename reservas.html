@@ -1,0 +1,183 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <title>Práctica 3 de Diseño de Interfaces Web</title>
+      <link rel="stylesheet" type="text/css" href="estilos.css" title="Practica 3 de CSS" />
+</head>
+<body>
+<!--    Jumbotron-->
+    <div class="jumbotron" id="cabecera">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+              <h1 class="display-4">Restaurante Tsubomi</h1>
+              <p>Come auténtica comida japonesa en un ambiente familiar y agradable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    Menu del sitio web-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+  <a class="navbar-brand" href="index.html">
+      <img src="imagenes/ic-sushi.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Tsubomi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Inicio</a>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="nuestrosplatos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Nuestros platos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="nuestrosplatos.html#destacados">Platos destacados</a>
+          <a class="dropdown-item" href="nuestrosplatos.html#entrantes">Entrantes</a>
+          <a class="dropdown-item" href="nuestrosplatos.html#primeros">Primeros platos</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#segundos">Segundos platos</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#postres">Postres</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#bebidas">Bebidas</a>
+        <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="menu.html">Menús</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="reservas.html">Reservas <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="valoraciones.html">Valoraciones</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="galeria.html">Galería</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="localizacion.html">Localización</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Cuerpo-->
+    <p id="rellena">Rellena el siguiente formulario para reservar mesa:</p>
+    <div id="reservas">
+        <form>
+            <div id="campos">
+      <div class="form-group row">
+        <label for="inputName3" class="col-sm-2 col-form-label">Nombre</label>
+        <div class="col-sm-3">
+          <input type="name" class="form-control" id="inputName3" placeholder="Nombre">
+        </div>
+      </div>
+        <div class="form-group row">
+        <label for="inputSubName3" class="col-sm-2 col-form-label">Apellidos</label>
+        <div class="col-sm-6">
+          <input type="name" class="form-control" id="inputSubName3" placeholder="Apellidos">
+        </div>
+      </div>
+        <div class="form-group row">
+        <label for="telephone" class="col-sm-2 col-form-label">Teléfono de contacto</label>
+        <div class="col-sm-2">
+          <input type="name" class="form-control" id="telephone" placeholder="Teléfono">
+        </div>
+      </div>
+    <div class="form-group row">
+      <label for="inputNumber" class="col-sm-2 col-form-label">Número de personas</label>
+        <div class="col-sm-4">
+      <select id="inputNumber">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>+5 (consultar)</option>
+      </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="fechareserva" class="col-sm-2 col-form-label">Fecha de reserva</label>
+        <div class="col-sm-4">
+            <input type="date" name="reserva" step="1" min="2018-02-19" max="2018-03-20" value="2018-02-19">
+        </div>
+            </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">¿Has reservado antes con nosotros?</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Sí
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+          <div class="col-sm-2">Acepto la <a href="#">política de empresa</a></div>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Acepto
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="reserva">
+  <div class="col-md-2 col-md-offset-2"></div>
+  <div class="col-md-1 col-md-offset-1">
+       <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" class="text-center">
+              Reserva
+            </button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Reserva realizada con éxito</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                La reserva ha sido efectuada con éxito
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+                </div>
+          </div>
+            </div>
+          </div>
+        </div>       
+        </div>
+            </form>
+</div>
+    
+    <!--Pie -->
+    <footer>
+        <div class="footer">
+            &copy; 2018 Belinda Núñez Lozano
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,549 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <title>Práctica 3 de Diseño de Interfaces Web</title>
+      <link rel="stylesheet" type="text/css" href="estilos.css" title="Practica 3 de CSS" />
+</head>
+<body>
+<!--    Jumbotron-->
+    <div class="jumbotron" id="cabecera">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+              <h1 class="display-4">Restaurante Tsubomi</h1>
+              <p>Come auténtica comida japonesa en un ambiente familiar y agradable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    Menu del sitio web-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+  <a class="navbar-brand" href="index.html">
+      <img src="imagenes/ic-sushi.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Tsubomi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="nuestrosplatos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Nuestros platos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="nuestrosplatos.html#destacados">Platos destacados</a>
+          <a class="dropdown-item" href="nuestrosplatos.html#entrantes">Entrantes</a>
+          <a class="dropdown-item" href="nuestrosplatos.html#primeros">Primeros platos</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#segundos">Segundos platos</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#postres">Postres</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#bebidas">Bebidas</a>
+        <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="menu.html">Menús</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="reservas.html">Reservas</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="valoraciones.html">Valoraciones</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="galeria.html">Galería</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="localizacion.html">Localización</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--    Cuerpo-->
+<!--    Especiales y entrantes-->
+    <div class="container-fluid" id="cartafondo">
+        <div class="row no-gutters">
+              <div class="col-12"><div id="carta">
+                  <h1>Nuestros platos</h1>
+                  </div></div>
+          </div>
+        <div class="row no-gutters">
+              <div class="col-12 col-md-6" id="destacados"><div class="card">
+                                <div class="card-body">
+                                <h5 class="card-title">Platos destacados</h5>
+                                <p class="card-text">Aquí te mostramos nuestros platos más característicos y especialidades</p>
+                              </div>
+                              <img class="card-img-top" src="imagenes/especial1.jpg">
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item platos"><p>
+                                      <a class="btn boton" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Ramen casero (ラーメン)
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample">
+                                  <div class="card card-body">
+                                    Fideos ramen, chashu, medio huevo pochado, naruto y verduras con caldo de cerdo junto a nuestra salsa especial.
+                                      <img src="imagenes/ramen.jpg">
+                                    <p id="precios">Precio: 8.50€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Yakisoba　(やきそば)
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample2">
+                                  <div class="card card-body">
+                                    Salteado de fideos soba con verduras y carne en una plancha especial japonesa conocida como teppanyaki que consigue combinar de un modo apropiado cada uno de los sabores de este delicioso plato.
+                                      <img src="imagenes/yakisoba.jpg">
+                                    <p id="precios">Precio: 7.50€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Takoyaki（たこ焼き）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample3">
+                                  <div class="card card-body">
+                                    Bolitas de pulpo rodeadas de una masa especial que contiene verduras originarias de Japón proporcionando el sabor más auténtico en cada bocado.
+                                      <img src="imagenes/takoyaki.jpg">
+                                    <p id="precios">Precio: 8€ (6 unidades)</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Sushi　（すし）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample4">
+                                  <div class="card card-body">
+                                    Especialidades del chef quien seleccionará entre los ingredientes más exquisitos para poder proporcionar la mejor experiencia en cada momento
+                                      <img src="imagenes/sushivar.jpg">
+                                    <p id="precios">Precio: 12€ (12 unidades)</p>
+                                  </div>
+                                </div>
+                                </li>
+                                 <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Omelette（オムライス）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample5">
+                                  <div class="card card-body">
+                                    Tortilla rellena de arroz con pollo y una potente salsa que hará que en cada bocado explote una gran cantidad de sabores en tu boca.
+                                      <img src="imagenes/omelette.jpg">
+                                    <p id="precios">Precio: 10€</p>
+                                  </div>
+                                </div>
+                                </li>                           
+                              </ul>
+                        </div>
+                    </div>
+              <div class="col-12 col-md-6" id="entrantes"><div class="card">
+                    <div class="card-body">
+                                <h5 class="card-title">Entrantes</h5>
+                                <p class="card-text">Los mejores platos para abrir boca</p>
+                  </div>
+                        <img class="card-img-top" src="imagenes/ensalada.jpg">
+                        <ul class="list-group list-group-flush">
+                                  <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Gyozas（魚菜）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample6">
+                                  <div class="card card-body">
+                                    Empanadillas de verduras y carne al estilo japonés
+                                      <img src="imagenes/gyozas.jpg">
+                                    <p id="precios">Precio: 8.50€</p>
+                                  </div>
+                                </div>
+                                </li>
+                        <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Yakitori（焼き鳥）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample7">
+                                  <div class="card card-body">
+                                    Pinchitos de pollo con salsa especial
+                                      <img src="imagenes/yakitori.jpg">
+                                    <p id="precios">Precio: 7.50€ (3 unidades)</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Sunomono（酢の物）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample8">
+                                  <div class="card card-body">
+                                    Salpicón de marisco, algas y pepino con vinagre de arroz
+                                      <img src="imagenes/sunomono.jpg">
+                                    <p id="precios">Precio: 8€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Gyutataki（ぎゅたたき）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample9">
+                                  <div class="card card-body">
+                                    Carpaccio de ternera con ponzu (salsa agria)
+                                      <img src="imagenes/gyutataki.jpg">
+                                    <p id="precios">Precio: 10.40€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                  <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Ruibe（るいべ）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample10">
+                                  <div class="card card-body">
+                                    Salmón fresco en lonchas con salsa especial Shogun
+                                      <img src="imagenes/ruibe.jpg">
+                                    <p id="precios">Precio: 10.80€</p>
+                                  </div>
+                                </div>
+                                </li>                           
+                              </ul>   
+                        </div>
+                  </div>
+            </div>
+<!--        Primeros y segundos-->
+            <div class="row no-gutters">
+              <div class="col-12 col-md-6" id="primeros"><div class="card">
+                                <div class="card-body">
+                                <h5 class="card-title">Primeros platos</h5>
+                                <p class="card-text">Os mostramos nuestros deliciosos primeros platos</p>
+                              </div>
+                              <img class="card-img-top" src="imagenes/sopa-miso.jpeg">
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample11" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Sopa de miso（味噌のスプ）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample11">
+                                  <div class="card card-body">
+                                    Deliciosa sopa casera caracterizada por su gran sabor y por contener una gran cantidad de miso en su interior.
+                                      <img src="imagenes/sopamiso2.jpg">
+                                    <p id="precios">Precio: 3.50€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample12" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Tsukemono（つけもの）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample12">
+                                  <div class="card card-body">
+                                    Verduras encurtidas con tono avinagrado y sabroso
+                                      <img src="imagenes/tsukemono.jpeg">
+                                    <p id="precios">Precio: 4.50€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample13" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Onigiri（おにぎり🍙）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample13">
+                                  <div class="card card-body">
+                                    Bolas de arroz aliñado rellenas de pollo al curry
+                                      <img src="imagenes/onigiri.jpeg">
+                                    <p id="precios">Precio: 10€ (6 unidades)</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample14" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Melon Pan（メロンパン）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample14">
+                                  <div class="card card-body">
+                                    Delicioso bollo con sabor dulce y envolvente
+                                      <img src="imagenes/melon%20pan.jpeg">
+                                    <p id="precios">Precio: 4€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                 <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample15" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Shoronpo（所論ぽ）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample15">
+                                  <div class="card card-body">
+                                    Empanadillas de colores que forman una explosión de texturas y sabores en cada bocado
+                                      <img src="imagenes/shoronpo.jpeg">
+                                    <p id="precios">Precio: 12€ (5 unidades)</p>
+                                  </div>
+                                </div>
+                                </li>                           
+                              </ul>
+                        </div>
+                    </div>
+                  <div class="col-12 col-md-6" id="segundos"><div class="card">
+                    <div class="card-body">
+                                <h5 class="card-title">Segundos platos</h5>
+                                <p class="card-text">Satisface tu hambre con estos manjares</p>
+                  </div>
+                        <img class="card-img-top" src="imagenes/karaage.jpg">
+                        <ul class="list-group list-group-flush">
+                                  <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample16" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Arroz con curry japonés（カレー）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample16">
+                                  <div class="card card-body">
+                                    Delicioso arroz con carne empanada acompañado de curry japonés (disponible en varias modalidades de picante)
+                                      <img src="imagenes/arroz%20con%20curry.jpg">
+                                    <p id="precios">Precio: 8.50€</p>
+                                  </div>
+                                </div>
+                                </li>
+                        <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample17" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Oyakodon（親子丼）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample17">
+                                  <div class="card card-body">
+                                    Delicioso plato de arroz con pollo, huevo y cebolleta acompañado de la salsa especial
+                                      <img src="imagenes/oyakodon.jpg">
+                                    <p id="precios">Precio: 9.00€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample18" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Okonomiyaki（お好み焼き）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample18">
+                                  <div class="card card-body">
+                                    Tortilla japonesa rellena de verduras y pollo
+                                      <img src="imagenes/okonomiyaki.jpg">
+                                    <p id="precios">Precio: 8€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample19" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Carne de Kobe（神戸の肉）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample19">
+                                  <div class="card card-body">
+                                    Exquisita carne de Kobe conocida mundialmente por su sabor y suave textura
+                                      <img src="imagenes/carne%20kobe.jpg">
+                                    <p id="precios">Precio: 15.00€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                  <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample20" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Unagi Donburi（ウナギどんぶり）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample20">
+                                  <div class="card card-body">
+                                    Arroz con anguila preparada con especias y una salsa especial de la casa
+                                      <img src="imagenes/unagi.jpg">
+                                    <p id="precios">Precio: 15.00€</p>
+                                  </div>
+                                </div>
+                                </li>                           
+                              </ul>   
+                        </div>
+                  </div>     
+            </div>
+<!--        Postres y bebidas-->
+         <div class="row no-gutters">
+              <div class="col-12 col-md-6" id="postres"><div class="card">
+                                <div class="card-body">
+                                <h5 class="card-title">Nuestros postres</h5>
+                                <p class="card-text">Siempre hay espacio para un poco de dulce</p>
+                              </div>
+                              <img class="card-img-top" src="imagenes/parfait.jpg">
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample21" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Taiyaki（たい焼き）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample21">
+                                  <div class="card card-body">
+                                    Pececito relleno de masa de judías. Ideal tomar en caliente
+                                      <img src="imagenes/taiyaki.jpg">
+                                    <p id="precios">Precio: 4.50€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample22" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Dangos（団子）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample22">
+                                  <div class="card card-body">
+                                    Bolas de masa envueltas por una salsa dulce y muy adictiva
+                                      <img src="imagenes/dangos.jpg">
+                                    <p id="precios">Precio: 6.00€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample23" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Dorayaki（どら焼き）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample23">
+                                  <div class="card card-body">
+                                    Postre típico japonés realizado al estilo original (relleno de judías azuki)
+                                      <img src="imagenes/dorayaki.jpg">
+                                    <p id="precios">Precio: 10€ (6 unidades)</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample24" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Cheese Cake（地図毛気）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample24">
+                                  <div class="card card-body">
+                                    Tarta de queso al estilo japonés que cuenta con un sabor extraordinario
+                                      <img src="imagenes/cheesecake.jpg">
+                                    <p id="precios">Precio: 6€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                 <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample25" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Mochis variados（持ちす）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample25">
+                                  <div class="card card-body">
+                                    Dulce típico de Japón hecho de masa de arroz con varios rellenos (té verde, melocotón y fresa)
+                                      <img src="imagenes/mochis.jpg">
+                                    <p id="precios">Precio: 10€ (6 unidades)</p>
+                                  </div>
+                                </div>
+                                </li>                           
+                              </ul>
+                        </div>
+                    </div>
+                  <div class="col-12 col-md-6" id="bebidas"><div class="card">
+                    <div class="card-body">
+                                <h5 class="card-title">Bebidas</h5>
+                                <p class="card-text">Disfruta de las bebidas traídas directamente desde el país Nipon</p>
+                  </div>
+                        <img class="card-img-top" src="imagenes/bebidas.jpg">
+                        <ul class="list-group list-group-flush">
+                                  <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample26" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Sake（さけ）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample26">
+                                  <div class="card card-body">
+                                    Bebida con alcohol típica de este país que se puede tomar tanto fría como caliente
+                                      <img src="imagenes/sake.jpg">
+                                    <p id="precios">Precio: 15.00€ (la botella)</p>
+                                  </div>
+                                </div>
+                                </li>
+                        <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample27" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                       Melon Soda（メロンソーダ）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample27">
+                                  <div class="card card-body">
+                                    Refresco típico de Japón burbujeante que llenará cada parte de tu boca de sabor a melón
+                                      <img src="imagenes/melon%20soda.jpg">
+                                    <p id="precios">Precio: 3.50€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample28" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Té verde japonés（お茶）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample28">
+                                  <div class="card card-body">
+                                    Té un poco amargo perfecto para acompañar cualquier plato
+                                      <img src="imagenes/ochya.jpg">
+                                    <p id="precios">Precio: 4€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample29" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Cerveza kirin（キリンのビル）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample29">
+                                  <div class="card card-body">
+                                    Cerveza de Japón caracterizada por sus tonos de sabor
+                                      <img src="imagenes/kirin.png">
+                                    <p id="precios">Precio: 5.00€</p>
+                                  </div>
+                                </div>
+                                </li>
+                                  <li class="list-group-item platos"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample30" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: rgba(0, 0, 0, 0); color: #cdd0eb">
+                                        Ramune（ラムネ）
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample30">
+                                  <div class="card card-body">
+                                    Divertida bebida que viene acompañada de una curiosa botella con sabores impactantes
+                                      <img src="imagenes/ramune.jpg">
+                                    <p id="precios">Precio: 3.00€</p>
+                                  </div>
+                                </div>
+                                </li>                           
+                              </ul>   
+                        </div>
+                  </div>
+                        
+            </div>
+        </div>
+    
+    <footer>
+        <div class="footer">
+            &copy; 2018 Belinda Núñez Lozano
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

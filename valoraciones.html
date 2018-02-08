@@ -1,0 +1,162 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <title>Práctica 3 de Diseño de Interfaces Web</title>
+      <link rel="stylesheet" type="text/css" href="estilos.css" title="Practica 3 de CSS" />
+</head>
+<body>
+<!--    Jumbotron-->
+    <div class="jumbotron" id="cabecera">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+              <h1 class="display-4">Restaurante Tsubomi</h1>
+              <p>Come auténtica comida japonesa en un ambiente familiar y agradable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    Menu del sitio web-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+  <a class="navbar-brand" href="index.html">
+      <img src="imagenes/ic-sushi.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Tsubomi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Inicio</a>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="nuestrosplatos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Nuestros platos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="nuestrosplatos.html#destacados">Platos destacados</a>
+          <a class="dropdown-item" href="nuestrosplatos.html#entrantes">Entrantes</a>
+          <a class="dropdown-item" href="nuestrosplatos.html#primeros">Primeros platos</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#segundos">Segundos platos</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#postres">Postres</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#bebidas">Bebidas</a>
+        <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="menu.html">Menús</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="reservas.html">Reservas <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="valoraciones.html">Valoraciones</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="galeria.html">Galería</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Localización</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Cuerpo-->
+    <p id="rellena2">Aquí puedes ver los últimos comentarios de nuestros clientes y comentar sobre tu experiencia con nosotros</p>
+    <ul class="comment-section">
+
+			<li class="comment user-comment">
+
+                <div class="info">
+                    <a href="#">Aki Toyosaki</a>
+                    <span>5/02/2018</span>
+                </div>
+
+                <a class="avatar" href="#">
+                    <img src="imagenes/avatar_user_1.jpg" width="35" alt="Profile Avatar" title="Anie Silverston" />
+                </a>
+
+                <p>Vine a probar ya que nunca había estado y me ha encantado,  sin duda volveré ¡espero que pronto pongan el servicio de comida a domicilio!</p>
+
+			</li>
+
+			<li class="comment author-comment">
+
+                <div class="info">
+                    <a href="#">Yazawa Nico</a>
+                    <span>3/02/2018</span>
+                </div>
+
+                <a class="avatar" href="#">
+                    <img src="imagenes/yazawa%20nico.jpg" width="35" alt="Profile Avatar" title="Yazawa Nico" />
+                </a>
+
+                <p>Todo excelente, comida, ubicación, atención y calidad de servicio, recomendado</p>
+
+			</li>
+
+			<li class="comment user-comment">
+
+                <div class="info">
+                    <a href="#">Mamoru Miyano</a>
+                    <span>30/01/2018</span>
+                </div>
+
+                <a class="avatar" href="#">
+                    <img src="imagenes/avatar_user_2.jpg" width="35" alt="Profile Avatar" title="Mamoru Miyano" />
+                </a>
+
+                <p>Estaba genial! idóneo para una nueva experiencia gastronómica! a los niños les encantó, os recomiendo las gyozas!! eran deliciosas!</p>
+
+			</li>
+
+            <li class="comment author-comment">
+
+                <div class="info">
+                    <a href="#">Megumin</a>
+                    <span>25/01/2018</span>
+                </div>
+
+                <a class="avatar" href="#">
+                    <img src="imagenes/cliente4.jpg" width="35" alt="Profile Avatar" title="Megumin" />
+                </a>
+
+                <p>Es como volver a Japón, me encanta! me recuerda a los restaurantes que visité y el personal es amable y atento</p>
+
+            </li>
+
+            <li class="write-new">
+
+                <form action="#" href="#">
+
+                    <textarea placeholder="Escribe tu comentario" name="comment"></textarea>
+
+                    <div>
+                        <img src="imagenes/userdefault.png" width="35"/>
+                        <button href="#">Enviar</button>
+                    </div>
+
+                </form>
+
+            </li>
+
+		</ul>
+
+ <!--Pie -->
+    <footer>
+        <div class="footer">
+            &copy; 2018 Belinda Núñez Lozano
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

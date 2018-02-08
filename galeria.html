@@ -1,0 +1,188 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <title>Práctica 3 de Diseño de Interfaces Web</title>
+      <link rel="stylesheet" type="text/css" href="estilos.css" title="Practica 3 de CSS" />
+</head>
+<body>
+<!--    Jumbotron-->
+    <div class="jumbotron" id="cabecera">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+              <h1 class="display-4">Restaurante Tsubomi</h1>
+              <p>Come auténtica comida japonesa en un ambiente familiar y agradable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    Menu del sitio web-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+  <a class="navbar-brand" href="index.html">
+      <img src="imagenes/ic-sushi.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Tsubomi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Inicio</a>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="nuestrosplatos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Nuestros platos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="nuestrosplatos.html#destacados">Platos destacados</a>
+          <a class="dropdown-item" href="nuestrosplatos.html#entrantes">Entrantes</a>
+          <a class="dropdown-item" href="nuestrosplatos.html#primeros">Primeros platos</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#segundos">Segundos platos</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#postres">Postres</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#bebidas">Bebidas</a>
+        <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="menu.html">Menús</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="reservas.html">Reservas <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="valoraciones.html">Valoraciones</a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="galeria.html">Galería</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="localizacion.html">Localización</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Cuerpo-->
+    <div class="container">
+	<div class="row">
+<div class="gallery">
+  <figure>
+    <img src="imagenes/galeria1.jpg" alt="" class="img-thumbnail img-fluid"/>
+    <figcaption>Nuestro restaurante <small>Uno de nuestros salones</small></figcaption>
+  </figure>
+  <figure>
+    <img src="imagenes/galeria2.jpg" alt="" class="img-thumbnail img-fluid"/>
+    <figcaption>Amplios salones<small>Perfectos para comidas familiares</small></figcaption>
+  </figure>
+  <figure>
+    <img src="imagenes/galeria3.jpg" alt="" class="img-thumbnail img-fluid"/>
+    <figcaption>
+      Salones tranquilos <small>Ideales para reuniones de cualquier tipo</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="imagenes/galeria4.jpg" alt="" class="img-thumbnail img-fluid"/>
+    <figcaption>Yukihiro Takahashi <small>Cocinero especialista en sushi</small></figcaption>
+  </figure>
+  <figure>
+    <img src="imagenes/galeria5.jpg" alt="" class="img-thumbnail img-fluid"/>
+    <figcaption>Michel Tsukimoto <small>Cocinero cuya especialidad son las salsas japonesas</small></figcaption>
+  </figure>
+  <figure>
+    <img src="imagenes/galeria6.jpg" alt="" class="img-thumbnail img-fluid"/>
+    <figcaption>Mamoru Mikoto<small>Se encarga de asegurarse de que las representaciones de los platos son reales</small></figcaption>
+  </figure>
+  <figure>
+    <img src="imagenes/galeria7.jpg" alt="" class="img-thumbnail img-fluid"/>
+    <figcaption>Kobe <small>Ingredientes traidos directamente desde Kobe</small></figcaption>
+  </figure>
+  <figure>
+    <img src="imagenes/galeria8.jpg" alt="" class="img-thumbnail img-fluid"/>
+    <figcaption>Tokyo<small>La capital del país nipón se encarga de mostrarnos su cultura y costumbres</small></figcaption>
+  </figure>
+  <figure>
+    <img src="imagenes/galeria9.jpg" alt="" class="img-thumbnail img-fluid"/>
+    <figcaption>
+      Asakusa <small>Captamos la esencia de cada barrio de Japón para retransmitirla en nuestros platos</small>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="imagenes/galeria10.jpg" alt="" class="img-thumbnail img-fluid" />
+    <figcaption>Los mejores platos <small>Con el auténtico sabor de Japón</small></figcaption>
+  </figure>
+  <figure>
+    <img src="imagenes/galeria11.jpg" alt="" class="img-thumbnail img-fluid" />
+    <figcaption>Una réplica exacta <small>Al alcance de tu mano</small></figcaption>
+  </figure>
+  <figure>
+    <img src="imagenes/galeria12.jpg" alt="" class="img-thumbnail img-fluid" />
+    <figcaption>Preparaciones caseras <small>Para satisfacer todos tus deseos culinarios</small></figcaption>
+  </figure>
+</div>
+        </div>
+    </div>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
+  <symbol id="close" viewBox="0 0 18 18">
+    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M9,0.493C4.302,0.493,0.493,4.302,0.493,9S4.302,17.507,9,17.507
+			S17.507,13.698,17.507,9S13.698,0.493,9,0.493z M12.491,11.491c0.292,0.296,0.292,0.773,0,1.068c-0.293,0.295-0.767,0.295-1.059,0
+			l-2.435-2.457L6.564,12.56c-0.292,0.295-0.766,0.295-1.058,0c-0.292-0.295-0.292-0.772,0-1.068L7.94,9.035L5.435,6.507
+			c-0.292-0.295-0.292-0.773,0-1.068c0.293-0.295,0.766-0.295,1.059,0l2.504,2.528l2.505-2.528c0.292-0.295,0.767-0.295,1.059,0
+			s0.292,0.773,0,1.068l-2.505,2.528L12.491,11.491z"/>
+  </symbol>
+</svg>
+<script>
+    popup = {
+  init: function(){
+    $('figure').click(function(){
+      popup.open($(this));
+    });
+    
+    $(document).on('click', '.popup img', function(){
+      return false;
+    }).on('click', '.popup', function(){
+      popup.close();
+    })
+  },
+  open: function($figure) {
+    $('.gallery').addClass('pop');
+    $popup = $('<div class="popup" />').appendTo($('body'));
+    $fig = $figure.clone().appendTo($('.popup'));
+    $bg = $('<div class="bg" />').appendTo($('.popup'));
+    $close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
+    $shadow = $('<div class="shadow" />').appendTo($fig);
+    src = $('img', $fig).attr('src');
+    $shadow.css({backgroundImage: 'url(' + src + ')'});
+    $bg.css({backgroundImage: 'url(' + src + ')'});
+    setTimeout(function(){
+      $('.popup').addClass('pop');
+    }, 10);
+  },
+  close: function(){
+    $('.gallery, .popup').removeClass('pop');
+    setTimeout(function(){
+      $('.popup').remove()
+    }, 100);
+  }
+}
+
+popup.init()
+
+</script>
+    <!--Pie -->
+    <footer>
+        <div class="footer">
+            &copy; 2018 Belinda Núñez Lozano
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

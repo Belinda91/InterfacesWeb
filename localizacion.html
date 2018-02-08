@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <title>Práctica 3 de Diseño de Interfaces Web</title>
+      <link rel="stylesheet" type="text/css" href="estilos.css" title="Practica 3 de CSS" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--    Jumbotron-->
+    <div class="jumbotron" id="cabecera">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+              <h1 class="display-4">Restaurante Tsubomi</h1>
+              <p>Come auténtica comida japonesa en un ambiente familiar y agradable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    Menu del sitio web-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+  <a class="navbar-brand" href="index.html">
+      <img src="imagenes/ic-sushi.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Tsubomi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Inicio</a>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="nuestrosplatos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Nuestros platos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="nuestrosplatos.html#destacados">Platos destacados</a>
+          <a class="dropdown-item" href="nuestrosplatos.html#entrantes">Entrantes</a>
+          <a class="dropdown-item" href="nuestrosplatos.html#primeros">Primeros platos</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#segundos">Segundos platos</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#postres">Postres</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#bebidas">Bebidas</a>
+        <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="menu.html">Menús</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="reservas.html">Reservas <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="valoraciones.html">Valoraciones</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="galeria.html">Galería</a>
+      </li>
+        <li class="nav-item active">
+        <a class="nav-link" href="localizacion.html">Localización</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Cuerpo-->
+<div class="container-fluid">
+    <div class="row no-gutters" id="todo">
+              <div class="col-12 col-md-6"><div id="datoscon">
+                  <div class="list-group" id="datitos">
+                  <a href="#" class="list-group-item list-group-item-action list-group-item-primary" id="primer">Datos de contacto</a>
+                  <a href="#" class="list-group-item list-group-item-action" id="listita"><span id="primer">Dirección:</span> Calle Pedro Antonio de Alarcón, 23, 18002 Granada</a>
+                  <a href="#" class="list-group-item list-group-item-action" id="listita"><spam id="primer">Teléfono: </spam>958260096</a>
+                  <a href="#" class="list-group-item list-group-item-action" id="listita"><spam id="primer">Horario de apertura:</spam> 13:30-15:30 & 20:30-23:00</a>
+                  <a href="#" class="list-group-item list-group-item-action" id="listita"><spam id="primer">Apto para familias</spam></a>
+                  <a href="#" class="list-group-item list-group-item-action" id="listita"><spam id="primer">Menús aptos para vegetarianos </spam><img src="imagenes/icono%20vegetariano.jpg" id="tama"></a>
+                   <a href="#" class="list-group-item list-group-item-action" id="listita"><spam id="primer">Organizamos comidas de empresa </spam></a>
+                      <a href="#" class="list-group-item list-group-item-action" id="listita"><spam id="primer">Contacta con nosotros en nuestras redes sociales</spam><div id="iconos"><p><span class="fa fa-twitter"></span><span class="fa fa-facebook"></span><span class="fa fa-instagram"></span></p></div></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1336.7004787801548!2d-3.605515511995875!3d37.171065533337156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fc96c2ed4e99%3A0x15f74e9a8a457ae2!2sKirin!5e0!3m2!1ses!2ses!4v1518088938556" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+    <!--Pie -->
+    <footer>
+        <div class="footer">
+            &copy; 2018 Belinda Núñez Lozano
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

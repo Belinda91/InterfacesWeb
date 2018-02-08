@@ -1,0 +1,223 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <title>Práctica 3 de Diseño de Interfaces Web</title>
+      <link rel="stylesheet" type="text/css" href="estilos.css" title="Practica 3 de CSS" />
+</head>
+<body>
+<!--    Jumbotron-->
+    <div class="jumbotron" id="cabecera">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+              <h1 class="display-4">Restaurante Tsubomi</h1>
+              <p>Come auténtica comida japonesa en un ambiente familiar y agradable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    Menu del sitio web-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+  <a class="navbar-brand" href="index.html">
+      <img src="imagenes/ic-sushi.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Tsubomi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="nuestrosplatos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Nuestros platos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="nuestrosplatos.html#destacados">Platos destacados</a>
+          <a class="dropdown-item" href="nuestrosplatos.html#entrantes">Entrantes</a>
+          <a class="dropdown-item" href="nuestrosplatos.html#primeros">Primeros platos</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#segundos">Segundos platos</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#postres">Postres</a>
+            <a class="dropdown-item" href="nuestrosplatos.html#bebidas">Bebidas</a>
+        <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="menu.html">Menús</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="reservas.html">Reservas</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="valoraciones.html">Valoraciones</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="galeria.html">Galería</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="localizacion.html">Localización</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Cuerpo-->
+    <div class="container-fluid" id="cartafondo">
+        <div class="row no-gutters">
+              <div class="col-12"><div id="carta">
+                  <h1>Menús diarios</h1>
+                  </div></div>
+          </div>
+        <div class="row no-gutters">
+              <div class="col-12 col-md-6" id="diario"><div class="menudiario">
+                                <div class="card-body">
+                                <h5 class="card-title">Menú tipo 1</h5>
+                                <p class="card-text">Perfecto para los amantes de la verdura</p>
+                              </div>
+                            <img class="card-img-top" src="imagenes/menu1.jpg">
+                  <ul class="list-group list-group-flush">
+                                  <li class="list-group-item menudiario"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: black; color: white">
+                                        Datos del menú
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample">
+                                  <div class="card card-body menu">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Arroz aromatizado con sésamo</li>
+                                        <li class="list-group-item">Salchichas de tofu cocidas</li>
+                                        <li class="list-group-item">Verduras al vapor</li>
+                                        <li class="list-group-item">Huevo duro</li>
+                                        <li class="list-group-item">Pan, bebida y postre</li>
+                                    </ul>
+                                      <div id="vegeta">
+                                        <p id="precios2">Precio: 9€<img src="imagenes/icono%20vegetariano.jpg"></p>
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                      </li>
+                  </ul>
+                  </div>
+            </div>
+               <div class="col-12 col-md-6" id="diario"><div class="menudiario">
+                                <div class="card-body">
+                                <h5 class="card-title">Menú tipo 2</h5>
+                                <p class="card-text">Para probar un poco de cada</p>
+                              </div>
+                            <img class="card-img-top" src="imagenes/obento2.jpg">
+                  <ul class="list-group list-group-flush">
+                                  <li class="list-group-item menudiario"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: black; color: white">
+                                        Datos del menú
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample2">
+                                  <div class="card card-body menu">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Sopa de miso</li>
+                                        <li class="list-group-item">Onigiris</li>
+                                        <li class="list-group-item">Gambas rebozadas</li>
+                                        <li class="list-group-item">Verduras al vapor</li>
+                                        <li class="list-group-item">2 piezas de sushi (tortilla y pollo)</li>
+                                        <li class="list-group-item">Pan, bebida y postre</li>
+                                    </ul>
+                                      <div id="vegeta">
+                                        <p id="precios2">Precio: 9.50€</p>
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                      </li>
+                  </ul>
+                  </div>
+            </div>
+            <div class="col-12 col-md-6" id="diario"><div class="menudiario">
+                                <div class="card-body">
+                                <h5 class="card-title">Menú tipo 3</h5>
+                                <p class="card-text">Si lo tuyo es la carne y el pescado</p>
+                              </div>
+                            <img class="card-img-top" src="imagenes/menu3.jpg">
+                  <ul class="list-group list-group-flush">
+                                  <li class="list-group-item menudiario"><p>
+                                      <a class="btn" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: black; color: white">
+                                        Datos del menú
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample3">
+                                  <div class="card card-body menu">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">4 mini makis de salmón</li>
+                                        <li class="list-group-item">1 pieza de sushi de atún</li>
+                                        <li class="list-group-item">1 pieza de sushi de gamba</li>
+                                        <li class="list-group-item">1 pieza de sushi de caballa</li>
+                                        <li class="list-group-item">Sashimi de salmón y de caballa</li>
+                                        <li class="list-group-item">Un pincho de yakitori</li>
+                                        <li class="list-group-item">Ensalada de la casa</li>
+                                        <li class="list-group-item">Pan, bebida y postre</li>
+                                    </ul>
+                                      <div id="vegeta">
+                                        <p id="precios2">Precio: 11€</p>
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                      </li>
+                  </ul>
+                  </div>
+            </div>
+            <div class="col-12 col-md-6" id="diario"><div class="menudiario">
+                                <div class="card-body">
+                                <h5 class="card-title">Menú tipo 4</h5>
+                                <p class="card-text">Tamaño especial gourmet desgustación</p>
+                              </div>
+                            <img class="card-img-top" src="imagenes/mega%20obento.jpg">
+                  <ul class="list-group list-group-flush">
+                                  <li class="list-group-item menudiario"><p>
+                                      <a class="btn boton" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample" style="background-color: black; color: white">
+                                        Datos del menú
+                                      </a>
+                                    </p>
+                                  <div class="collapse" id="collapseExample4">
+                                  <div class="card card-body menu">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tortilla omelette</li>
+                                        <li class="list-group-item">Fideos yakisoba</li>
+                                        <li class="list-group-item">Pulpo al estilo japonés</li>
+                                        <li class="list-group-item">Arroz con salsa japonesa</li>
+                                        <li class="list-group-item">Verduras cocidas</li>
+                                        <li class="list-group-item">Ternera de Kobe</li>
+                                        <li class="list-group-item">Karaage</li>
+                                        <li class="list-group-item">Pan, bebida y postre</li>
+                                    </ul>
+                                      <div id="vegeta">
+                                        <p id="precios2">Precio: 14.50€</p>
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                      </li>
+                  </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+<!--Pie -->
+    <footer>
+        <div class="footer">
+            &copy; 2018 Belinda Núñez Lozano
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
